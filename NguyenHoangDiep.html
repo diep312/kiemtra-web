@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+        <style>
+            *{
+                font-family: Inter, Arial, sans-serif;
+                color: white;
+                text-align: center;
+            }
+
+            button{
+                padding-inline: 20px;
+                padding-block: 20px;
+                border: white solid 2px;
+                background-color: #4f99dd;
+                border-radius: 5px;
+            }
+
+            .banner-wrapper{
+                display: flex;
+                height: 100vh;
+                width: 100vw;
+                align-items: center;
+                justify-content: center; 
+            }
+
+            .banner-bg{
+                position: relative;
+                width: 90%;
+                height: 70%;
+                background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.autoritedelaconcurrence.fr%2Fsites%2Fdefault%2Ffiles%2F2019-09%2Fcarte_monde.jpg&f=1&nofb=1&ipt=807bd5d13edb815a8c84ec2a251cb9e98ca2ca47d29470def80026ad4d66e843&ipo=images);
+                background-size: cover;
+                background-blend-mode: soft-light;
+                z-index: -2;
+            }
+            
+            .banner-layout{
+                display: flex;
+                height: 100%;
+                width: 100%;
+                box-sizing: border-box;
+                padding-inline: 20%;
+                flex-direction: column;
+                justify-content: space-evenly;
+                z-index: 1;
+            }
+
+            .bg-overlay{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                background-color: rgba(0, 0, 0, 0.6);
+                z-index: -1;
+            }
+
+            .banner-title{
+                font-size: 1.9em;     
+                font-weight: 700;       
+            }
+
+            .introduction{
+                font-weight: 500;
+                font-size: 0.8em;
+            }
+
+            .banner-subtitle{
+                font-size: 1.8 em;
+                font-weight: 700;
+            }
+
+            .input-subtitle{
+                font-size: 0.5em;
+            }
+
+            .custom-input{
+                position: relative;
+                width: 100%;
+                height: 40px;
+            }
+
+            .custom-input input{
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                border: #cc9956 solid 1px;
+            }
+            
+            .custom-input i{
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                z-index: 2;
+            }
+
+            .custom-input i::placeholder{
+                text-align: start;
+                padding-left: 20px;
+                color: grey;
+            }
+
+            .custom-input span{
+                color: #4f99dd;
+                position: absolute;
+                left: 5px;
+                top: 10px;
+            }
+
+            .button-layout{
+                display: flex; 
+                gap: 40px;
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body style="background-color:#202124">
+        <!-- Banner Wrapper -->
+        <div class="banner-wrapper">
+            <!-- Background cho banner -->
+     
+            <div class="banner-bg">
+                <!-- Overlay cho background dark hon -->
+                <div class="bg-overlay"></div>
+
+                <!-- Layout cho banner -->
+                <div class="banner-layout">
+                    <p class="banner-title">
+                        Trình rút ngắn URL của PTIT Logger - Đăng nhập và theo dõi địa chỉ IP
+                    </p>
+                    <p class="introduction">
+                        PTIT Logger là Công cụ rút ngân URL với các phân tích nâng cao về lưu lượng truy cập thông qua các liên kết, khách truy cập trên cửa hàng trực tuyến, blog hoặc trang web của bạn. Với các dịch vụ trực tuyến IPLogger, bạn có thể tìm địa chỉ IP của riêng mình, tìm vị trí địa chỉ IP và theo dõi vị trí chính xác của bất kỳ thiết bị di động hoặc PC nào, kiểm tra URL để tìm các chuyển hướng ấn vì lý do an toàn. Có một số cách để thu thập phân tích chỉ tiết và theo dõi địa chỉ IP: liên kết ngân, pixel vô hình, công cụ ghi nhật kỳ địa lý độc đáo và sử dụng trình theo dõi URL. Bạn có thể sử dụng bây IP hoàn toàn hợp pháp bằng cách sử dụng công nghệ được cấp bằng sáng chế độc đáo của chúng tôi để thu thập sự đồng ý của người dùng
+                    </p>
+                    
+                    <div>
+                        <p class="banner-subtitle">
+                            Tạo liên kết mới, URL theo dõi hoặc điện thoại di động
+                        </p>
+                        
+                        <div class="custom-input">
+                            <input placeholder="Nhập URL, số điện thoại hoặc mã hợp lệ" />
+                            <span class="material-symbols-outlined">
+                                bring_your_own_ip
+                            </span>                    
+                        </div>
+      
+                        <p class="input-subtitle">
+                            Bằng cách tạo một trình ghi nhật ký, bạn đồng ý với<span style="color:#4f99dd"> các điều khoản</span> và <span style="color:#4f99dd">chính sách quyền riêng tư của chúng tôi</span>
+                        </p>
+        
+                        <div class="button-layout">
+                            <button>Tạo một mã liên kết ngắn</button>
+                            <button>Đó là mã theo dõi</button>
+                        </div>
+        
+                        <div class="close-banner">
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
